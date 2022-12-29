@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E21AD125-7B5F-4FF9-BCF4-21F18A6D4D38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>forSell.presentation</RootNamespace>
+    <AssemblyName>forSell.presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAddOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddOption.Designer.cs">
+      <DependentUpon>FormAddOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddSpeechInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddSpeechInfo.Designer.cs">
+      <DependentUpon>FormAddSpeechInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGetFlowName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGetFlowName.Designer.cs">
+      <DependentUpon>FormGetFlowName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfoSpeech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfoSpeech.Designer.cs">
+      <DependentUpon>FormInfoSpeech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainFlow.Designer.cs">
+      <DependentUpon>FormMainFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddOption.resx">
+      <DependentUpon>FormAddOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddSpeechInfo.resx">
+      <DependentUpon>FormAddSpeechInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGetFlowName.resx">
+      <DependentUpon>FormGetFlowName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfoSpeech.resx">
+      <DependentUpon>FormInfoSpeech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainFlow.resx">
+      <DependentUpon>FormMainFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\forSell.business\forSell.business.csproj">
+      <Project>{8ad9f123-743f-4245-8ece-bd6d2190ba8b}</Project>
+      <Name>forSell.business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\forSell.entity\forSell.entity.csproj">
+      <Project>{116aa49e-c421-4efe-9a8e-f79fbcca1bc3}</Project>
+      <Name>forSell.entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

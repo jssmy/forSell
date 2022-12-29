@@ -1,0 +1,22 @@
+[
+  {
+    "parent_id": "problemas-con-internet",
+    "id": "no-navega",
+    "name": "NO NAVEGA"
+  },
+  {
+    "parent_id": "problemas-con-internet",
+    "id": "lentitud",
+    "name": "LENTITUD"
+  },
+  {
+    "parent_id": "problemas-con-internet",
+    "id": "wifi",
+    "name": "WIFI"
+  },
+  {
+    "parent_id": "problemas-con-deco-tv",
+    "id": "sin-senal",
+    "name": "SIN SEÑAL"
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "id": "sptep-one-is-deadline",
+    "image": "/assets/img/over-breakdown.svg",
+    "title": "Revisando estado del servicio",
+    "header": "Paso 1: Avería dentro de plazo",
+    "currentStep": "confirmar",
+    "description": ":nombreCliente, verificamos que tu ticket de avería está dentro del plazo establecido, de igual forma estamos coordinando para que seas atendido con prioridad",
+    "options": [
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "Siguiente",
+        "key": "tipify",
+        "validations": [
+          {
+            "key": "profiles",
+            "value": [
+              "B2C_VISOR_ASESOR_2DA_LINEA_TECNICO_FIJA",
+              "B2C_VISOR_SUPERVISOR_2DA_LINEA_TECNICO_FIJA"
+            ]
+          }
+        ]
+      },
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "Siguiente",
+        "key": "overflow",
+        "validations": [
+          {
+            "key": "profiles",
+            "value": [
+              "B2C_VISOR_ASESOR_2DA_LINEA_CCEE_TECNICA_CONVERGENTE",
+              "B2C_VISOR_SUPERVISOR_2DA_LINEA_CCEE_TECNICA_CONVERGENTE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sptep-one-no-deadline",
+    "image": "/assets/img/over-breakdown.svg",
+    "title": "Información de pedido en curso",
+    "header": "Paso 1: Avería fuera de plazo",
+    "description": ":nombreCliente, efectivamente revisamos que ya pasó el plazo de atención, coordinaré su avería para que sea atendido a la brevedad.",
+    "infoBar": {
+      "icon": "priority_high",
+      "message": ":nombreAsesor, realizar el  agendamiento a través de la web y brinda la disponibilidad al cliente. Si no hay cupos disponibles, indicar al cliente el plazo de 1 día y escálalo con tu supervisor",
+      "type": "warning"
+    },
+    "currentStep": "confirmar",
+    "options": [
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "Siguiente",
+        "key": "tipify",
+        "validations": [
+          {
+            "key": "profiles",
+            "value": [
+              "B2C_VISOR_ASESOR_2DA_LINEA_TECNICO_FIJA",
+              "B2C_VISOR_SUPERVISOR_2DA_LINEA_TECNICO_FIJA"
+            ]
+          }
+        ]
+      },
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "Siguiente",
+        "key": "overflow",
+        "validations": [
+          {
+            "key": "profiles",
+            "value": [
+              "B2C_VISOR_ASESOR_2DA_LINEA_CCEE_TECNICA_CONVERGENTE",
+              "B2C_VISOR_SUPERVISOR_2DA_LINEA_CCEE_TECNICA_CONVERGENTE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "over-diagnosis",
+    "image": "/assets/img/over-breakdown.svg",
+    "title": "Revisando estado del servicio",
+    "header": "Fin de diagnóstico",
+    "description": "Listo, :nombreCliente, eso sería todo. <br>¿Tienes alguna consulta adicional en tu servicio? \uD83D\uDC69 \uD83D\uDCBB",
+    "currentStep": "finalizar",
+    "options": [
+      {
+        "color": "info",
+        "stylebutton": "outlined",
+        "value": "Sí, tengo otra consulta",
+        "key": "haveQuestion"
+      },
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "No, eso sería todo",
+        "key": "over-diagnosis-goodbye"
+      }
+    ]
+  },
+  {
+    "id": "over-diagnosis-goodbye",
+    "image": "/assets/img/over-breakdown.svg",
+    "title": "Revisando estado del servicio",
+    "header": "",
+    "description": "Gracias por comunicarte con Movistar, en los siguientes días recibirás una encuesta para evaluar mi atención que acabas de recibir, tu opinión es importante para darte un mejor servicio. \uD83D\uDC99",
+    "currentStep": "finalizar",
+    "options": [
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "Finalizar",
+        "key": "endFlow"
+      }
+    ]
+  }
+]

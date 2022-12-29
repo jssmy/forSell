@@ -1,0 +1,422 @@
+[
+  {
+    "scenary": [
+      "Avería individual pendiente"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, ingresa a CMS, +Simple o GESTEL, para verificar la fecha y tipo de avería registrado. ¿La avería está dentro de plazo?<br><br>¿La avería se encuentra dentro del plazo de atención?",
+    "options": [
+      {
+        "stylebutton": "outlined",
+        "value": "No",
+        "color": "info",
+        "key": "sptep-one-no-deadline"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "sptep-one-is-deadline"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Avería masiva pendiente",
+      "Avería Masiva Pendiente"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, ingresa a CMS, +Simple o GESTEL, para verificar la fecha y tipo de avería registrado. ¿La avería está dentro de plazo?",
+    "options": [
+      {
+        "value": "No",
+        "color": "info",
+        "stylebutton": "outlined",
+        "key": "sptep-one-no-deadline-massive-pending"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "sptep-one-is-deadline-massive-pending"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Masiva en la zona - Realizar registro de avería"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "register-breakdonw"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Masiva en la Zona - Se registro Avería"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "registered-breakdonw-massive-in-zone"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Posible masiva en la zona - Revisar estado modem",
+      "Posible problema señal RF - Revisar estado modem",
+      "Problemas con INIT-D - Realizar Soporte",
+      "Línea fuera de servicio - Realizar Soporte",
+      "Modem OFFLine - Realizar Soporte",
+      "Posible problema Red Cliente - Realizar Soporte",
+      "Reset modem Fallido - Realizar soporte",
+      "Servicio ok - Realizar Soporte",
+      "Reconexion en red fallida - Revisar Servicio"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "technical-desicard"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Posible problema señal RF - Se registro avería",
+      "Problema de IP - Se registro avería",
+      "Trabajo Programado en la zona - Se registro avería",
+      "ONT Degradado / Fuera de servicio - Se registro avería"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "breakdown-register-one-deadline-not-validation"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Problema de Ruido - Se registro Avería",
+      "Problema de Saturación - Se registro Avería",
+      "Recomienda Despacho - Se registro avería"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "breakdown-register-two-deadline-not-validation"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Problema de ruido - Realizar Soporte",
+      "ONT / OLT  Averiada - Realizar soporte"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, revisa el estado comercial actual del cliente. ¿Se encuentra activo?",
+    "options": [
+      {
+        "stylebutton": "outlined",
+        "color": "info",
+        "value": "No",
+        "key": "initial-discard"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "technical-desicard"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Recomienda Despacho - Realizar registro de avería"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, revisa el estado comercial actual del cliente. ¿Se encuentra activo?",
+    "options": [
+      {
+        "stylebutton": "outlined",
+        "color": "info",
+        "value": "No",
+        "key": "initial-discard"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "register-breakdonw-deadline"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Servicio con Reconexión pendiente - Revisar en sistema"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "technical-discard-pending-reconnection"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Servicio cortado en Red - Reconectar"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "technical-discard-rconnect"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Trabajo Programado en la zona - Realizar registro de avería"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "register-breakdonw"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "ONT Apagada - Realizar Soporte"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "info",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "stylebutton": "unelevated",
+        "value": "Siguiente",
+        "key": "technical-desicard-ont-off"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "ONT Degradado / Fuera de servicio - Realizar soporte"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, revisa el estado comercial actual del cliente. ¿Se encuentra activo?",
+    "options": [
+      {
+        "stylebutton": "outlined",
+        "color": "info",
+        "value": "No",
+        "key": "initial-discard"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "technical-discard-ont-degraded-dosupport"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Problema de Saturación - Revisar estado modem",
+      "Problema de IP - Revisar estado del servicio"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, revisa el estado comercial actual del cliente. ¿Se encuentra activo?",
+    "options": [
+      {
+        "stylebutton": "outlined",
+        "color": "info",
+        "value": "No",
+        "key": "initial-discard"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "technical-desicard"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Reconexión en red exitoso - Realizar soporte"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "technical-desicard-success-reconnection"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Reset modem ok - Realizar soporte"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "reset-modem-reinicio-servicio"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Servicio no Disponible - Realizar soporte"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": true,
+    "type": "warning",
+    "header": "Comunicación al asesor",
+    "description": ":nombreAsesor, revisa el estado comercial actual del cliente. ¿Se encuentra activo?",
+    "options": [
+      {
+        "color": "info",
+        "stylebutton": "outlined",
+        "value": "No",
+        "key": "initial-discard"
+      },
+      {
+        "color": "info",
+        "value": "Sí",
+        "key": "technical-discard-ont-degraded-dosupport"
+      }
+    ]
+  },
+  {
+    "scenary": [
+      "Tiene pedidos pendientes - Revisar en sistema"
+    ],
+    "diagnosisFlow": [
+      "wifi"
+    ],
+    "enable": false,
+    "type": "",
+    "header": "",
+    "description": "",
+    "options": [
+      {
+        "color": "info",
+        "value": "Siguiente",
+        "key": "tiene-pedidos-pendientes"
+      }
+    ]
+  }
+]
